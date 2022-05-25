@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1006437921425",
+    "project_id": "vsocial-a9cab",
+    "storage_bucket": "vsocial-a9cab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1006437921425:android:a631d0b2ccad48401a8530",
+        "android_client_info": {
+          "package_name": "com.example.vsocial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1006437921425-n6s9puhf3on4fi5nca6fv3v35a6a6dd9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vsocial",
+            "certificate_hash": "a40bc147892c96adfeca35cd78f1ca6be941b0e6"
+          }
+        },
+        {
+          "client_id": "1006437921425-nv6g1up0rdje3ep5spa4i4e3qjs0atu0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBm0GWsaweNMA2QLsKzt0lpR1E3xMCFc9I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1006437921425-nv6g1up0rdje3ep5spa4i4e3qjs0atu0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
