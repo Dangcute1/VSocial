@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp"
-    tools:context=".RegisterActivity">
+    tools:context=".LoginActivity">
 
     <!--TextView: Label Register-->
     <TextView
@@ -54,20 +54,22 @@
 
     <!--Button: Register-->
     <Button
-        android:id="@+id/register_btn"
+        android:id="@+id/loginBtn"
         android:text="Login"
         android:layout_below="@+id/passwordTIL"
         android:layout_centerHorizontal="true"
         style="@style/Base.Widget.AppCompat.Button.Colored"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:drawablePadding="5dp"/>
+     -- TextView:Click go to RegisterActivity   -->
     <TextView
-        android:id="@+id/have_accountTv"
+        android:id="@+id/nothave_accountTv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Already have account ? Login "
+        android:text="Not have account ? Regeister "
         android:textAlignment="center"
-        android:layout_below="@id/register_btn"
+        android:layout_below="@id/loginBtn"
         android:layout_marginTop="30dp"
         android:textColor="@color/black"/>
 

@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/nmhda/Documents/VSocial/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/nmhda/Documents/VSocial/app/src/main/res/layout/activity_profile.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/nmhda/Documents/VSocial/app/src/main/res/layout/activity_register.xml" value="0.2713864306784661" />
+        <entry key="..\:/Users/nmhda/Documents/VSocial/app/src/main/res/menu/menu.xml" value="0.18541666666666667" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.36041666666666666" />
         <entry key="app/src/main/res/layout/activity_profile.xml" value="0.36041666666666666" />
         <entry key="app/src/main/res/layout/activity_register.xml" value="0.3463541666666667" />

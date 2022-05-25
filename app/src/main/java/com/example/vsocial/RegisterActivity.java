@@ -12,6 +12,7 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -26,6 +27,7 @@ public class RegisterActivity extends AppCompatActivity {
     //views
     EditText mEmailEt, mPasswordEt;
     Button mRegisterBtn;
+    TextView mHaveAccountTv;
 
     ProgressDialog progressDialog;
 
@@ -36,25 +38,18 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
         //vdu
-
-        //Actionbar and its title
-        ActionBar actionBar = getSupportActionBar();
-        actionBar.setTitle("Tạo Tài Khoản");
-        //enable back button
-        actionBar.setDisplayHomeAsUpEnabled(true);
-        actionBar.setDisplayShowHomeEnabled(true);
-
         //init
         mEmailEt = findViewById(R.id.emailEt);
         mPasswordEt = findViewById(R.id.passwordEt);
-        mRegisterBtn = findViewById(R.id.registerBtn);
+        mRegisterBtn= findViewById(R.id.register_btn);
+        mHaveAccountTv= findViewById(R.id.have_accountTv);
 
         //in the onCreate() method initialize the firebaseauth instance
         firebaseAuth = FirebaseAuth.getInstance();
 
         //progress
         progressDialog = new ProgressDialog(this);
-        progressDialog.setMessage("Đang Tạo Tài Khoản Người Dùng...");
+        progressDialog.setMessage("Creating...");
 
         //handle click register btn click
         mRegisterBtn.setOnClickListener(new View.OnClickListener() {
@@ -77,6 +72,13 @@ public class RegisterActivity extends AppCompatActivity {
                 else {
                     registerUser(email, password); //register the user
                 }
+            }
+        });
+        //handle login textview click listener
+        mHaveAccountTv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(RegisterActivity.this,LoginActivity.class));
             }
         });
     }
