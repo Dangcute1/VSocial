@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Register"
+        android:text="Vsocial"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="25sp" />
@@ -67,7 +67,7 @@
         android:id="@+id/nothave_accountTv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Not have account ? Regeister "
+        android:text="Not have account ? Sign Up"
         android:textAlignment="center"
         android:layout_below="@id/loginBtn"
         android:layout_marginTop="30dp"

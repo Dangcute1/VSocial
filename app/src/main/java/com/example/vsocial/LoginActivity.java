@@ -69,7 +69,7 @@ public class LoginActivity extends AppCompatActivity
                 }
             }
         });
-        //not have account textviwe click
+        //not have account textview click
         notHaveAccountTv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
