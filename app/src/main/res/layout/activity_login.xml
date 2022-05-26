@@ -72,6 +72,8 @@
         android:text="Forgot Password ? Recover"
         android:layout_below="@id/loginBtn"
         android:textColor="@color/black"/>
+
+
     <TextView
         android:id="@+id/nothave_accountTv"
         android:layout_width="match_parent"

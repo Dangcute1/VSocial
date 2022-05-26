@@ -18,6 +18,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
@@ -48,6 +50,7 @@ public class LoginActivity extends AppCompatActivity
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowHomeEnabled(true);
 
+
         // in the onCreate method, initialize the FirebaseAuth
         mAuth = FirebaseAuth.getInstance();
         //init
@@ -56,6 +59,7 @@ public class LoginActivity extends AppCompatActivity
         notHaveAccountTv=findViewById(R.id.nothave_accountTv);
         mRecoverPassTv=findViewById(R.id.recoverPassTv);
         mLoginBtn = findViewById(R.id.loginBtn);
+        //login button click
         mLoginBtn.setOnClickListener(new View.OnClickListener()
         {
             @Override
